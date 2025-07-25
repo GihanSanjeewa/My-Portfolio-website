@@ -31,7 +31,7 @@ import { useState } from 'react';
 export default function Home() {
 
   //function
-  const [darkmode ,setdarkmode] = useState(false);
+  const [darkmode ,setdarkmode] = useState(true);
   const icon = {
     hidden: {
       pathLength: 0,

@@ -2,11 +2,11 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export', // Enables static export
-  basePath: isProd ? '/My-Portfolio-website' : '', // Matches your repo name
-  assetPrefix: isProd ? '/My-Portfolio-website/' : '', // Ensures assets load correctly
+  output: 'export',
+  basePath: isProd ? '/My-Portfolio-website' : '',
+  assetPrefix: isProd ? '/My-Portfolio-website/' : '',
   images: {
-    unoptimized: true, // Disables image optimization for static export
+    unoptimized: true,
   },
 };
 
