@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Use a compatible Node.js version
+          node-version: '18'
 
       - name: Install Dependencies
         run: npm install
@@ -32,3 +32,4 @@ jobs:
         with:
           branch: gh-pages
           folder: out
+          token: ${{ secrets.DEPLOY_TOKEN }}
